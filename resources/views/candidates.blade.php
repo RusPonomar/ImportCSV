@@ -1,10 +1,3 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: EVE
- * Date: 16.05.2019
- * Time: 10:15
- */
 @extends('layouts.app')
 
 @section('content')
