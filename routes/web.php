@@ -11,6 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/candidates-list', 'CandidateController@list')->name('candidate.list');
+Route::post('/candidates-import', 'CandidateController@candidatesImport')->name('candidate.import');
+Route::post('/candidates-export{type}', 'CandidateController@candidatesExport')->name('candidate.export');
+Route::post('/job-import', 'JobController@jobsImport')->name('job.import');
+Route::get('/import', 'CandidateController@list')->name('candidate.list');
